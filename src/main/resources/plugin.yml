@@ -5,4 +5,13 @@ api-version: '1.19'
 authors: [ Spinnin34 ]
 commands:
   pv:
-    description
+    description: Abre una mochila específica del jugador.
+    usage: /pv <numero de mochila>
+
+permissions:
+  kalium.default.backpack:
+    description: Permiso para el rol por defecto con acceso a la mochila de 2 filas y una sola mochila.
+    default: true
+  kalium.vip.backpack:
+    description: Permiso para el rol VIP con acceso a mochilas de 5 filas y hasta 2 mochilas.
+    default: op

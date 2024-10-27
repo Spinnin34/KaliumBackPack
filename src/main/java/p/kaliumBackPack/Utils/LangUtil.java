@@ -1,8 +1,8 @@
-package p.scoreBoradKR.Utils;
+package p.kaliumBackPack.Utils;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import p.scoreBoradKR.ScoreBoradKR;
+import p.kaliumBackPack.KaliumBackPack;
 
 import java.io.File;
 import java.io.InputStream;
@@ -14,18 +14,18 @@ public class LangUtil {
     private static FileConfiguration langConfig = null;
     private static File langFile = null;
 
-    public LangUtil(ScoreBoradKR plugin) {
+    public LangUtil(KaliumBackPack plugin) {
 
         saveDefaultLang();
     }
 
     public static void reloadLang() {
         if (langFile == null) {
-            langFile = new File(ScoreBoradKR.getInstance().getDataFolder(), "lang.yml");
+            langFile = new File(KaliumBackPack.getInstance().getDataFolder(), "lang.yml");
         }
         langConfig = YamlConfiguration.loadConfiguration(langFile);
 
-        InputStream defaultLangStream = ScoreBoradKR.getInstance().getResource("lang.yml");
+        InputStream defaultLangStream = KaliumBackPack.getInstance().getResource("lang.yml");
         if (defaultLangStream != null) {
             YamlConfiguration defaultConfig = YamlConfiguration.loadConfiguration(new InputStreamReader(defaultLangStream));
             langConfig.setDefaults(defaultConfig);
@@ -41,10 +41,10 @@ public class LangUtil {
 
     public void saveDefaultLang() {
         if (langFile == null) {
-            langFile = new File(ScoreBoradKR.getInstance().getDataFolder(), "lang.yml");
+            langFile = new File(KaliumBackPack.getInstance().getDataFolder(), "lang.yml");
         }
         if (!langFile.exists()) {
-            ScoreBoradKR.getInstance().saveResource("lang.yml", false);
+            KaliumBackPack.getInstance().saveResource("lang.yml", false);
         }
     }
 

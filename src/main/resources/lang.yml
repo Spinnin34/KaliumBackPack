@@ -1,0 +1,16 @@
+#
+#   ██████╗██████╗ ██╗███╗  ██╗███╗  ██╗██╗███╗  ██╗
+#  ██╔════╝██╔══██╗██║████╗ ██║████╗ ██║██║████╗ ██║
+#  ╚█████╗░██████╔╝██║██╔██╗██║██╔██╗██║██║██╔██╗██║
+#   ╚═══██╗██╔═══╝ ██║██║╚████║██║╚████║██║██║╚████║
+#  ██████╔╝██║     ██║██║ ╚███║██║ ╚███║██║██║ ╚███║
+#  ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚══╝╚═╝  ╚══╝╚═╝╚═╝  ╚══╝
+#
+
+messages:
+  prefix: "&#FB0000&nM&#FC1700&no&#FC2E00&nc&#FD4500&nh&#FD5C00&ni&#FE7300&nl&#FE8A00&na&#FFA100&ns&r &f»&7 "
+  not-player: "&#FB0044⚠ Este comando solo puede ser usado por jugadores."
+  not-backpack: "&#FB0044⚠ No tienes permiso para acceder a esta mochila."
+  use: "Uso: &f/pv <numero de mochila>"
+  value-backpack-null: "&#FB0044⚠ Introduce un número válido para la mochila."
+  open: "Has abierto la mochila &#C096FB%backpack%"

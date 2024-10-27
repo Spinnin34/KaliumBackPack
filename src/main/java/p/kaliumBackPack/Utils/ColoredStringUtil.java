@@ -1,4 +1,4 @@
-package p.scoreBoradKR.Utils;
+package p.kaliumBackPack.Utils;
 
 import net.md_5.bungee.api.ChatColor;
 import org.apache.commons.lang3.StringUtils;
